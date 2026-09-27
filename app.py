@@ -82,7 +82,7 @@ chart_col1, chart_col2 = st.columns(2)
 # 1. Line chart: Monthly sales by region (trend)
 with chart_col1:
     monthly_sales = (
-        orders_df.groupby(["month", "region"])["sales_inr"]
+        filtered_df.groupby(["month", "region"])["sales_inr"]
         .sum()
         .reset_index()
     )
