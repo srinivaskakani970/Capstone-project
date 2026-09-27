@@ -14,6 +14,6 @@
 
 - Removing exact duplicate rows addresses **Uniqueness**.
 - Normalizing region text addresses **Consistency**.
-- Inputing missing category values addresses **Completeness**.
-- Inputing missing profit values addresses **Accuracy** and **Completeness**.
+- Imputing missing category values addresses **Completeness**.
+- Imputing missing profit values addresses **Accuracy** and **Completeness**.
 - Running schema validation addresses **Validity**.

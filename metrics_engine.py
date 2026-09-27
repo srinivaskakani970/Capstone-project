@@ -1,5 +1,5 @@
 """
-metrics_engine.py -- Significance flagging with state persistance (Task 2.4).
+metrics_engine.py -- Significance flagging with state persistence (Task 2.4).
 """
 from __future__ import annotations
 

@@ -10,7 +10,7 @@ A single, repeatable pipeline that ingests a raw monthly order export, cleans an
 # 1. Create a virtual environment and install dependencies
 python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
 
-# 2. Generate teh dataset and run the full pipeline
+# 2. Generate the dataset and run the full pipeline
 python generate_dataset.py && python clean_data.py && python build_db.py && python queries.py && python metrics_engine.py && python draft_report.py && python review_gate.py
 
 # 3. Launch the dashboard
@@ -39,7 +39,7 @@ streamlit run app.py
 | 'data_quality_report.md' | 1 | Data-quality dimension mapping |
 | 'build_db.py' | 2 | Builds 'pharmeasy.db' SQLite database |
 | 'queries.py' | 2 | JOIN validation + region x month metrics SQL |
-| 'metrics_engine.py' | 2 | Significance flagging + state persistance |
+| 'metrics_engine.py' | 2 | Significance flagging + state persistence |
 | 'draft_report.py' | 3 | 'draft_report_v1' CII insight generator |
 | 'memo.md' | 3 | One-page recommendation memo (Guntur +122.19%) |
 | 'review_gate.py' | 3 | 'review_gate_v1' + test harness |
@@ -58,6 +58,6 @@ streamlit run app.py
    - **One-page memo** ('memo.md'): The recommendation - grounded in the Guntur +122.19% finding, with risk-tiered claims and a clear next-check date.
    - **Presentation storyline** ('presentation_storyline.md'): How you would defend the finding live - SCR framing for executive, OCD framing for regional managers, plus anticipated pushback Q&A.
 
-3. **Recommended consuption order:** Dashboard (explore the data) -> CII narrative (understand the story) -> Memo (read the recommendation) -> Presentation storyline (prepare for the discussion).
+3. **Recommended consumption order:** Dashboard (explore the data) -> CII narrative (understand the story) -> Memo (read the recommendation) -> Presentation storyline (prepare for the discussion).
 
-4. **Unverified assumption:** The cause of Guntur's May spike is unknown - the order data alone cannot distinguish between a one-time bulk order, a category mix shift, or a genuine demand increase. This is flagged in the memo's Assuptions field and labeled as a hypothesis, not a fact.
+4. **Unverified assumption:** The cause of Guntur's May spike is unknown - the order data alone cannot distinguish between a one-time bulk order, a category mix shift, or a genuine demand increase. This is flagged in the memo's Assumptions field and labeled as a hypothesis, not a fact.
