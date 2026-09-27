@@ -95,7 +95,7 @@ def demo_state_persistence() -> None:
     """Demonstrate save/load round-trip."""
     state_path = STATE_DIR / "state_2026-04.json"
     if not state_path.exists():
-        print("State file not found. Run run_flaging() first.")
+        print("State file not found. Run run_flagging() first.")
         return
     loaded = load_previous_state_v1(state_path)
     print("\n=== State Persistence Round-Trip ===")
