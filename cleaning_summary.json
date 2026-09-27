@@ -1,0 +1,52 @@
+{
+  "raw_rows": 2159,
+  "clean_rows": 2100,
+  "duplicates_removed": 59,
+  "raw_region_variant_count": 16,
+  "normalized_region_count": 9,
+  "raw_region_variants": [
+    " BENGALURU",
+    " Vijayawada ",
+    " hyderabad",
+    "Bengaluru",
+    "Guntur",
+    "HYDERABAD ",
+    "Hyderabad",
+    "Karimnagar",
+    "Nellore",
+    "Tirupati",
+    "VIJAYAWADA",
+    "Vijayawada",
+    "Visakhapatnam",
+    "Warangal",
+    "bengaluru ",
+    "vijayawada"
+  ],
+  "normalized_regions": [
+    "Bengaluru",
+    "Guntur",
+    "Hyderabad",
+    "Karimnagar",
+    "Nellore",
+    "Tirupati",
+    "Vijayawada",
+    "Visakhapatnam",
+    "Warangal"
+  ],
+  "missing_profit_before_imputation": 94,
+  "missing_category_before_imputation": 48,
+  "missing_profit_after_imputation": 0,
+  "missing_category_after_imputation": 0,
+  "schema_validation_clean": {
+    "status": "validated",
+    "row_count": 2100,
+    "missing_columns": []
+  },
+  "schema_validation_broken": {
+    "status": "blocked_schema",
+    "row_count": 2100,
+    "missing_columns": [
+      "profit_inr"
+    ]
+  }
+}
